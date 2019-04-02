@@ -1,0 +1,10 @@
+aside {
+    grid-area: aside;
+    max-height: 100%;
+}
+.container {
+    max-height: 100vh;
+    grid-area: container;
+    padding: 40px 60px;
+    overflow-y: scroll;
+}
