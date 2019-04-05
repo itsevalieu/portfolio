@@ -1,78 +1,125 @@
-header {
-    background-image: url('../../assets/bar.jpg');
-    background-size: 100% 100%;
-    background-position: center center;
-    font-size: 1.8em;
-    min-height: 100vh;
-    color: #fff;
-    .inner {
-        display: flex;
-        justify-content: center;
-        padding: 40px;
-        .avatar {
-            border-radius: 50%;
-            height: 150px;
-            width: 150px;
-            margin: 0 auto;
-        }
-        .logo {
-            text-align: center;
-            text-shadow: 1px 1px 3px #333;
-            h1 {
-                font-size: 1.8em;
-                padding: 0;
-                margin: 0.5em;
-            }
-            p {
-                font-size: 1em;
-                padding: 0;
-                margin: 0;
-            }
-        }
+.person {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 1px 1px 3px #444;
+    text-transform: uppercase;
+    .person__avatar {
+        border-radius: 50%;
+        height: 150px;
+        width: auto;
+        margin: 0 auto;
     }
-    
-    nav {
-        justify-self: right;
-        padding: 40px;
-    
-        ul {
-            list-style-type: none;
-            margin: 0; 
-            padding: 0;
+    .person__title {
+        font-size: 1.6em;
+        padding: 0;
+        margin: 0.5em;
+    }
+    .person__subtitle {
+        font-size: 0.8em;
+        padding: 0;
+        margin: 0;
+    }
+}
 
-            li {
-                margin: 1em 0;
-
-                a {
-                    text-transform: uppercase;
-                    font-size: 1em;
-
-                    &:hover {
-                        font-size: 1.1em;
-                    }
+.nav {
+    max-height: 100%;
+    .nav-links {
+        list-style-type: none;
+        margin: 0; 
+        padding: 40px 0px;
+        li {
+            padding: 15px 0px;
+            a {
+                text-transform: uppercase;
+                font-size: 1em;
+                &:hover {
+                    font-size: 1.1em;
                 }
             }
         }
     }
-
-    .social {
-        padding: 40px;
+    .social-links {
+        width: 100%;
         font-size: 0.8em;
+        list-style-type: none;
+        padding: 40px 0px 0px 0px;
+        margin: 0;
+        .nav__social {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+        }
+        .nav__menu {
+            display: none;
+        }
     }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    header {
-        background: #222;
-        width: 100%;
-        height: 350px;
+    .person {
+        max-height: 300px;
+        padding: 40px;
+    }
+    .nav {
+        .nav-links {
+            display: none;
+            text-align: right;
+            padding: 10px 25px;
+        }
+        .social-links {
+            padding: 10px 25px;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            .nav__social {
+                height: 100%;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                width: 20%;
+            }
+            .nav__menu {
+                display: block;
+                text-align: right;
+                width: 50%;
+            }
+        }
     }
 }
 @media (max-width: 767px) {
-    header {
-        background: #222;
-        width: 100%;
-        height: 350px;
+    .person {
+        max-height: 300px;
+        padding: 40px;
     }
-
+    .nav {
+        .nav-links {
+            display: none;
+            text-align: right;
+            padding: 10px;
+        }
+        .social-links {
+            padding: 10px;
+            border-top: 0.4px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            .nav__social {
+                height: 100%;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                width: 40%;
+            }
+            .nav__menu {
+                display: block;
+                text-align: right;
+                width: 50%;
+            }
+        }
+    }
 }

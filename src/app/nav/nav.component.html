@@ -1,18 +1,22 @@
-<header>
-  <div class='inner'>
-    <a routerLink='/' class='logo'>
-      <img class='avatar' src='../../assets/profile.jpg' alt='profile'/>
-      <h1>{{ appTitle }}</h1>
-      <p>WEB DEVELOPER</p>
-    </a>
-  </div>
-  <nav>
-    <ul>
-      <li><a routerLink='/portfolio'>Portfolio</a></li>
-      <li><a routerLink='/contact'>Contact Me</a></li>
-    </ul>
-  </nav>
-  <div class='social'>
-    <p>GET IN TOUCH</p>
-  </div>
-</header>
+<a routerLink='/' class='person'>
+  <img class='person__avatar' src='../../assets/profile.jpg' alt='profile'/>
+  <h1 class='person__title'>{{ appTitle }}</h1>
+  <p class='person__subtitle'>Web Developer</p>
+</a>
+<nav class='nav'>
+  <ul class='social-links'>
+    <div class='nav__social'>
+        <li><a href='/'><img src='../../assets/mail.png' alt='mail'></a></li>
+        <li><a href='/'><img src='../../assets/linkedin.png' alt='linkedin'></a></li>
+        <li><a href='/'><img src='../../assets/github.png' alt='github'></a></li>
+        <li><a href='/'><img src='../../assets/twitter.png' alt='twitter'></a></li>
+    </div>
+    <div class='nav__menu'>
+        <li><a href='/'><img src='../../assets/hamburger.png' alt='hamburger'></a></li>
+    </div>
+  </ul>
+  <ul class='nav-links'>
+    <li><a routerLink='/portfolio'>Portfolio</a></li>
+    <li><a routerLink='/contact'>Contact Me</a></li>
+  </ul>
+</nav>

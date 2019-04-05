@@ -1,10 +1,38 @@
-aside {
-    grid-area: aside;
-    max-height: 100%;
+header {
+    background-image: url('../assets/bar.jpg');
+    background-size: 100% 100%;
+    background-position: center center;
+    font-size: 1.8em;
+    height: 100vh;
+    color: #fff;
+    grid-area: header;
+    padding: 45px 40px;
 }
-.container {
-    max-height: 100vh;
-    grid-area: container;
-    padding: 40px 60px;
+main {
+    height: 100vh;
+    grid-area: main;
+    padding: 30px 60px;
     overflow-y: scroll;
+    // border: 1px solid blue;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        background: #222;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+    main {
+        height: 100%;
+    }
+}
+@media (max-width: 767px) {
+    header {
+        background: #222;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
 }
