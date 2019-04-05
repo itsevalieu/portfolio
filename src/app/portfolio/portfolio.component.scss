@@ -1,4 +1,78 @@
-p {
-    font-size: 3em;
-    color: pink;
+.timeline {
+    // border: 1px solid red;
+    font-size: 1.4em;
+    padding: 0;
+
+    p {
+        font-size: 1.2em;
+        padding: 0.5em 0;
+        margin: 0.6em 0;
+    }
+
+    .project {
+        display: grid;
+        grid-template-columns: 13% 87%;
+        grid-template-rows: 100%;
+        grid-template-areas: 'date description';
+
+        .project__date {
+            grid-area: date;
+            border-right: 1px solid #ccc;
+            text-align: right;
+            padding: 25px 10px 0 0;
+        }
+
+        .project__description {
+            grid-area: description;
+            padding: 20px 20px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 100%;
+            grid-template-areas: 'text demo';
+            grid-column-gap: 15px;
+    
+            .project__text {
+                grid-area: text;
+                .project__title {
+                    font-size: 1.6em;
+                    margin: 0;
+                }
+                .project__button {
+                    background: rgb(101, 219, 219);
+                    height: 50px;
+                    width: 100px;
+                    border: 1px solid rgb(101, 219, 219);
+                    font-size: 1em;
+                    margin: 2.5px;
+                    a {
+                        color: #000;
+                    }
+                }
+                
+                .project__tech {
+                    .tech__list {
+                        list-style-type: none;
+                        display: flex;
+                        flex-flow: row wrap;
+                        padding: 0;
+                        .tech__item {
+                            background: rgb(138, 215, 215);
+                            padding: 8px;
+                            margin: 2.5px;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+            .project__demo {
+                grid-area: demo;
+                img {
+                    max-height: 200px;
+                    max-width: 250px;
+                    background: #ccc;
+
+                }
+            }
+        }
+    }
 }
