@@ -29,6 +29,7 @@
         list-style-type: none;
         margin: 0; 
         padding: 40px 0px;
+        display: block;
         li {
             padding: 15px 0px;
             a {
@@ -39,12 +40,6 @@
                 }
             }
         }
-    }
-    .nav__links-show {
-        display: block;
-    }
-    .nav__links-hide {
-        display: none;
     }
     .social-links {
         width: 100%;
@@ -86,6 +81,12 @@
             text-align: right;
             padding: 10px 25px;
         }
+        .nav__links-show {
+            display: block;
+        }
+        .nav__links-hide {
+            display: none;
+        }
         .social-links {
             padding: 10px 25px;
             border-top: 1px solid #ccc;
@@ -117,7 +118,13 @@
         .nav-links {
             // display: none;
             text-align: right;
-            padding: 10px;
+            padding: 10px 25px;
+        }
+        .nav__links-show {
+            display: block;
+        }
+        .nav__links-hide {
+            display: none;
         }
         .social-links {
             padding: 10px;
