@@ -40,6 +40,12 @@
             }
         }
     }
+    .nav__links-show {
+        display: block;
+    }
+    .nav__links-hide {
+        display: none;
+    }
     .social-links {
         width: 100%;
         font-size: 0.8em;
@@ -50,9 +56,21 @@
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-around;
+            li:hover {
+                transform: scale(1.1);
+            }
         }
         .nav__menu {
             display: none;
+            button {
+                background: none;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
         }
     }
 }
@@ -64,7 +82,7 @@
     }
     .nav {
         .nav-links {
-            display: none;
+            // display: none;
             text-align: right;
             padding: 10px 25px;
         }
@@ -97,7 +115,7 @@
     }
     .nav {
         .nav-links {
-            display: none;
+            // display: none;
             text-align: right;
             padding: 10px;
         }

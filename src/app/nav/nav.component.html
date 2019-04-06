@@ -12,10 +12,13 @@
         <li><a href='https://twitter.com/itsevalieu?lang=en'><img src='../../assets/twitter.png' alt='twitter'></a></li>
     </div>
     <div class='nav__menu'>
-        <li><a href='/'><img src='../../assets/hamburger.png' alt='hamburger'></a></li>
+        <li><button (click)='toggleNav()'><img src='../../assets/hamburger.png' alt='hamburger'></button></li>
     </div>
   </ul>
-  <ul class='nav-links'>
+  <ul class='nav-links' [ngClass]= "{
+    'nav__links-show': navVisible,
+    'nav__links-hide': !navVisible
+  }">
     <li><a routerLink='/portfolio'>Portfolio</a></li>
     <li><a routerLink='/contact'>Contact Me</a></li>
   </ul>

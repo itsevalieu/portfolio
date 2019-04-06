@@ -8,10 +8,20 @@ import { Component, OnInit } from '@angular/core';
 export class NavComponent implements OnInit {
   
   appTitle: string = 'EVA LIEU';
+  navVisible: boolean = false;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleNav() {
+    if( !this.navVisible) {
+      this.navVisible = true;
+    } else {
+      this.navVisible = false
+    }
+    console.log(this.navVisible);
   }
 
 }
