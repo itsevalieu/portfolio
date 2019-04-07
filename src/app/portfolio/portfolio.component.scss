@@ -50,6 +50,9 @@
                     a {
                         color: #000;
                     }
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
                 
                 .project__tech {
@@ -69,11 +72,11 @@
             }
             .project__demo {
                 grid-area: demo;
+                width: 100%;
                 img {
-                    max-height: 200px;
-                    max-width: 250px;
+                    width: 100%;
                     background: #ccc;
-
+                    margin: 0 auto;
                 }
             }
         }
