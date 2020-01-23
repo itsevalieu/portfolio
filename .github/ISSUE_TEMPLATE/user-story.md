@@ -8,17 +8,17 @@ assignees: ''
 ---
 
 ## User Story
-As a user [doing an action/verb], I need a [feature], so that I can [accomplish something]. 
+As a user [role doing an action/verb], I need a [feature/requirement], so that I can [accomplish something/return of investment]. 
 
 ## Background/ Notes
 
 
 ## Requirements/ Definition of Done
-- []
-- []
-- []
-- []
-- []
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
 
 ## Wireframes
 
